@@ -1,0 +1,62 @@
+/*
+.wrapper {
+    .main {
+        .container {
+            .article {
+                .post {
+                    p {
+                        color: blue;
+                    }
+                }
+            }
+        }
+    }
+}
+  */
+  
+  .main {
+      .wrapper & {
+          width: 300px;
+          height: 300px;
+          background-color: yellow ;
+      }
+  }
+  
+  p {
+      font: {
+          family: open-sans;
+          size: 30px;
+          weight: 500;
+      }
+      
+      text: {
+          align: center;
+          transform: uppercase;
+      }
+  }
+  
+ %backgroundImage {
+      background: {
+          size: cover;
+          position: center center;
+          repeat: no-repeat;
+          image: url("https://dummyimage.com/450x250/cf1bcf/fff.png")
+      }
+  }
+  
+div {
+  @extend %backgroundImage
+  }
+  
+.container {
+    background-image: url("https://dummyimage.com/450x250/2ae076/fff.png")
+}
+
+.article {
+    background-image: url("https://dummyimage.com/450x250/1638f5/fff.png")
+}
+
+.post {
+    background-image: url("https://dummyimage.com/450x250/f58616/fff.png")
+}
+
